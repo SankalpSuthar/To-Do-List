@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="logo">✔ MyTasks</div>
+        <nav>
+            <ul>
+                <li class="active">📥 Inbox</li>
+                <li>📅 Today</li>
+                <li>⏳ Upcoming</li>
+                <li>✅ Completed</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="topbar">
+            <div class="menu-btn" id="menuBtn">☰</div>
+            <h1>Inbox</h1>
+            <button id="addTaskBtn">+ Add Task</button>
+        </header>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter your task...">
+            <input type="datetime-local" id="taskDateTime">
+        </div>
+        <div id="clearCompletedContainer" style="display:none; padding: 10px 20px;">
+        <button id="clearCompletedBtn" style="background:#dc2626; color:white; border:none; padding:6px 12px; border-radius:5px; cursor:pointer;">
+        Clear All Completed
+        </button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
